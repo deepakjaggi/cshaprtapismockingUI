@@ -2,7 +2,6 @@ using APIDemo;
 using APIDemo.Models;
 using Moq;
 using NUnit.Framework;
-using System;
 using System.Linq;
 
 namespace ApiTestsUser
