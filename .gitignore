@@ -16,3 +16,9 @@
 /.vs/API-Tests/v17/TestStore/0/testlog.manifest
 /.vs
 /APITests/obj/Debug/netcoreapp3.1/ApiTests.csproj.AssemblyReference.cache
+/APIDemo/bin/Debug/APIDemo.exe
+/APIDemo/bin/Debug/APIDemo.pdb
+/APIDemo/obj/Debug/APIDemo.exe
+/APIDemo/obj/Debug/APIDemo.pdb
+/APITests/bin/Debug/netcoreapp3.1/APIDemo.exe
+/APITests/bin/Debug/netcoreapp3.1/APIDemo.pdb
