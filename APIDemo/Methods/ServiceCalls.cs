@@ -6,7 +6,7 @@ namespace APIDemo
 {
     public class ServiceCalls
     {
-        public virtual User GetUser(int id)
+        public User GetUser(int id)
         {
             var client = new RestClient("https://reqres.in/");
             var request = new RestRequest("api/users/" + id);
