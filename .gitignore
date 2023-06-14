@@ -22,3 +22,5 @@
 /APIDemo/obj/Debug/APIDemo.pdb
 /APITests/bin/Debug/netcoreapp3.1/APIDemo.exe
 /APITests/bin/Debug/netcoreapp3.1/APIDemo.pdb
+/APITests/obj/Debug/netcoreapp3.1/ApiTests.csproj.BuildWithSkipAnalyzers
+/APITests/obj/Debug/netcoreapp3.1/ApiTests.csproj.CoreCompileInputs.cache
