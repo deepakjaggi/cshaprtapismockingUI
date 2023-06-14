@@ -15,3 +15,4 @@
 /.vs/API-Tests/v17/TestStore/0/000.testlog
 /.vs/API-Tests/v17/TestStore/0/testlog.manifest
 /.vs
+/APITests/obj/Debug/netcoreapp3.1/ApiTests.csproj.AssemblyReference.cache
