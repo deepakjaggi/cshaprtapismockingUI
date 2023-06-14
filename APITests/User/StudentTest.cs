@@ -9,7 +9,7 @@ namespace ApiTestsUser
     public class StudentTests
     {
         [Test]
-        public void CreateStudent_ShouldAddStudentToDictionary()
+        public void CreateStudent_ShouldAddStudentToDictionary_Mock()
         {
             // Arrange
             var studentRepository = new Mock<StudentRepository>() { CallBase = true };

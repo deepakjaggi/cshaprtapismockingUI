@@ -27,8 +27,7 @@ namespace ApiTests.User
         public StudentRepository()
         {
             students = new Dictionary<int, Student>();
-        }
-        
+        }        
 
         public virtual Student CreateStudent(Student student)
         {
@@ -55,3 +54,17 @@ namespace ApiTests.User
     }
 
 }
+
+
+//public Student CreateStudent(string name, int age)
+//{
+//    int studentId = GenerateUniqueId();
+//    var student = new Student
+//    {
+//        StudentId = studentId,
+//        Name = name,
+//        Age = age
+//    };
+//    students.Add(studentId, student);
+//    return student;
+//}
