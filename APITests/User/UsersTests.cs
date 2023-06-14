@@ -8,22 +8,20 @@ namespace ApiTestsUser
 {
     public class UsersTests
     {
-        bool mockFlag = false;
-        Mock<ServiceCalls> objServiceCalls = new Mock<ServiceCalls>();
-        MockSetup mdt = new MockSetup();
-
-        [Test]
+        /// <summary>
+        /// Kalle - I want to basically 2 things
+        /// 1- Mock this service so that if when i run in test ENV, it should come from wire mocks.
+        /// 2- If i run in Real ENV, it should come from real response.
+        /// 3- You can change the code and create some generic HTTP clients.
+        /// 4- In this step, reponse can come frorm Mocksetup.cs
+        /// 
+        /// another thing is - if we can create Mock server in C# this test and create a fake end point which mocks the response as : https://reqres.in/api/users/2'
+        /// You can use the response from above as string
+        /// </summary>
+        [Test]        
         public void GetUserDetails()
-        {
-            if (mockFlag == true)
-            {                
-                objServiceCalls.Setup(r => r.GetUser(2)).Returns(mdt.GetUserMock(2));                
-            }
-            if (mockFlag == false)
-            {
-                objServiceCalls.Setup(r => r.GetUser(2)).Returns(new ServiceCalls().GetUser(2));
-            }
-            var user = objServiceCalls.Object.GetUser(2);
+        {            
+            var user = new ServiceCalls().GetUser(2);
             Assert.AreEqual(user.Data.Id, 2);
             Assert.AreEqual(user.Data.Email, "janet.weaver@reqres.in");
             Assert.AreEqual(user.Data.First_name, "Janet");
