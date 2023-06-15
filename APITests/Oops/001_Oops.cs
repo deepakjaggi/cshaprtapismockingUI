@@ -6,11 +6,18 @@ namespace ApiTests.Oops
     public class Oops
     {
 
+        //**********************
         [Test]
         public void TestHello()
         {
             Console.WriteLine("Hello");
         }
+        //**********************
+        public static String str_cus_name1 = "Cus1";
+        public static String str_cus_name2 = "Cus2";
+        public static int totalamount_cus1 = 1000;
+        public static int totalamount_cus2 = 2000;
+
         [Test]
         public void ProgramWithoutOops()
         {
@@ -19,11 +26,6 @@ namespace ApiTests.Oops
             Console.WriteLine(GetBalance(str_cus_name1));
             Console.WriteLine(GetBalance(str_cus_name2));
         }
-
-        public static String str_cus_name1 = "Cus1";
-        public static String str_cus_name2 = "Cus2";
-        public static int totalamount_cus1 = 1000;
-        public static int totalamount_cus2 = 2000;
 
         public static void Credit(int amount, String cusName)
         {
@@ -60,6 +62,47 @@ namespace ApiTests.Oops
             }
             return amountToReturn;
         }
-    }    
+        //**********************
+        [Test]
+        public void ProgramWitOops()
+        {
+            //let us say, if you forget to initilize variables, and hence we are using constructors.
+            //Constructor block would get executed as soon as we create object of class
+            Banking objcus1 = new Banking("Deepak", 1000);
+            objcus1.Credit(100);
+            Banking objcus2 = new Banking("Rachana", 2000);
+            objcus2.Debit(100);
+            Console.WriteLine(objcus1.Getbalance());
+            Console.WriteLine(objcus2.Getbalance()); 
+        }
+        public class Banking
+        {
+            public String cus_name = "";
+            public int totalbalance = 0;
+            //let us say, if you forget to initilize variables, and hence we are using constructors.
+            //Constructor block would get executed as soon as we create object of class
+            public Banking(String cus_name, int totalbalance)
+            {
+                this.cus_name = cus_name;
+                this.totalbalance = totalbalance;
+            }
+            public void Credit(int amount)
+            {
+                totalbalance = totalbalance + amount;
+            }
+            public void Debit(int amount)
+            {
+                totalbalance = totalbalance - amount;
+            }
+            public int Getbalance()
+            {
+                return totalbalance;
+            }
+        }
+        //Class is a concept
+        //if person is class and then we are are objects
+        //Objects we can see ,touch, and perform mehods on object.
+        //Here, if banking is class, then credit, debit, getbalance are methods.
+    }
 }
  
