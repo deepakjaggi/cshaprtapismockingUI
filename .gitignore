@@ -25,3 +25,12 @@
 /APITests/obj/Debug/netcoreapp3.1/ApiTests.csproj.BuildWithSkipAnalyzers
 /APITests/obj/Debug/netcoreapp3.1/ApiTests.csproj.CoreCompileInputs.cache
 /APITests/obj/Debug/netcoreapp3.1/ApiTests.GeneratedMSBuildEditorConfig.editorconfig
+/APIDemo/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/APITests/bin/Debug/netcoreapp3.1/ApiTests.runtimeconfig.dev.json
+/APITests/obj/ApiTests.csproj.nuget.dgspec.json
+/APITests/obj/ApiTests.csproj.nuget.g.props
+/APITests/obj/Debug/netcoreapp3.1/ApiTests.assets.cache
+/APITests/obj/Debug/netcoreapp3.1/ApiTests.csproj.FileListAbsolute.txt
+/APITests/obj/Debug/netcoreapp3.1/ApiTests.genruntimeconfig.cache
+/APITests/obj/project.assets.json
+/APITests/obj/project.nuget.cache
