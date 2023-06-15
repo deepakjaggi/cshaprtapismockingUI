@@ -1,9 +1,10 @@
-﻿using ApiTests.User;
-using Moq;
+﻿using Moq;
 using NUnit.Framework;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 
-namespace ApiTestsUser
+namespace ApiTests.Students
 {
     [TestFixture]
     public class StudentTests
@@ -13,6 +14,7 @@ namespace ApiTestsUser
         {
             // Arrange
             var studentRepository = new Mock<StudentRepository>() { CallBase = true };
+            
             var student = new Student
             {
                 Name = "John Doe",

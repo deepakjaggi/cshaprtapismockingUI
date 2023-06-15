@@ -37,3 +37,5 @@
 /APIDemo/obj/Debug/APIDemo.csproj.FileListAbsolute.txt
 /APIDemo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 /APITests/bin/Debug/netcoreapp3.1/ApiTests.runtimeconfig.dev.json
+/learningOops/obj
+/.gitignore

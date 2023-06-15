@@ -1,33 +1,15 @@
-﻿using Microsoft.VisualBasic;
-using System;
-using System.Buffers.Text;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace ApiTests.User
+namespace ApiTests.Students
 {
-    public interface IStudentRepository
-    {
-        Student CreateStudent(Student student);
-        void UpdateStudent(Student student);
-        Student GetStudent(Student student);
-    }
-    public class Student
-    {
-        public int StudentId { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-    }
-    public class StudentRepository : IStudentRepository
+    public class StudentRepository : IStudent
     {
         private Dictionary<int, Student> students;
 
         public StudentRepository()
         {
             students = new Dictionary<int, Student>();
-        }        
+        }
 
         public virtual Student CreateStudent(Student student)
         {
